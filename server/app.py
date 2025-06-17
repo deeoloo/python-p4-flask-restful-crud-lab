@@ -61,7 +61,7 @@ class PlantByID(Resource):
         if 'price' in data:
             Plant.price = data['price']
         if 'is_in_stock' in data:
-            Plant.is_in_stock =  data['is_in_stock']
+            plant.is_in_stock =  data['is_in_stock']
 
         db.session.commit()
 
